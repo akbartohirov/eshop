@@ -1,0 +1,32 @@
+.collection-preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .preview {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+
+    @media only screen and (max-width: 425px) {
+      grid-template-columns: auto;
+      grid-gap: 0;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 900px) {
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+    }
+
+    @media only screen and (min-width: 901px) and (max-width: 1100px) {
+      grid-template-columns: auto auto auto;
+      grid-gap: 15px;
+    }
+  }
+}
